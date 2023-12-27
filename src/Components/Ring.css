@@ -1,0 +1,12 @@
+.ring-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    transform-origin: center center;
+                        
+}
+
