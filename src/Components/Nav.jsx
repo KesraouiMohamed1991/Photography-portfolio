@@ -34,7 +34,7 @@ const Nav = () => {
           <NavLink
             key={link.name}
             to={link.link}
-            className={({ isActive }) => `${isActive ? "bg-background text-text border-2 border-text  " : ""} text-sm  sm:flex justify-center items-center bg-text  rounded-3xl md:px-6 px-8 py-3 text-background font-custom border-2 hover:text-text hover:bg-background hover:border-2 hover:border-text ${show ? 'flex' : 'hidden'}`}
+            className={({ isActive }) => `${isActive ? "bg-background text-text border-2 border-text  " : "text-background bg-text"} text-sm  sm:flex justify-center items-center bg-text  rounded-3xl md:px-6 px-8 py-3  font-custom border-2 hover:text-text hover:bg-background hover:border-2 hover:border-text ${show ? 'flex' : 'hidden'}`}
 
           >
             {link.name}
