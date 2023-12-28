@@ -16,7 +16,7 @@ function Contact() {
       <div className="h-full flex flex-col justify-center items-center sm:block sm:h-1/2 w-full sm:w-2/3">
         <h1 className='text-5xl sm:text-9xl mt-10 font-custom font-bold'>Get in <br /><span className='text-rose-400'> Touch  </span> </h1>
         
-        <div className="flex h-8 justify-start p-4 sm:gap-10 gap-10 text-center sm:text-start mt-24 items-center flex-wrap cursor-pointer">
+        <div className="flex h-8 justify-start p-2 sm:gap-10 gap-10 text-center sm:text-start mt-24 items-center flex-wrap cursor-pointer">
           <p className='font-custom'>Follow me : </p>
 
           

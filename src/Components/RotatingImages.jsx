@@ -11,18 +11,15 @@ const RotatingImages = ({ images }) => {
   };
 
   return (
-    <div className="h-1/3 w-full sm:h-[600px] sm:w-[400px]  flex items-center justify-center ">
+    <div className="h-1/2 w-full sm:h-[600px] sm:w-[400px]  flex items-center justify-center ">
       {imageOrder.map((image, index) => (
         <img
-   
-          
-          className='sm:h-2/5 sm:w-1/3 w-1/2 object-cover shadow-lg shadow-text'
+          className='sm:h-2/6 sm:w-1/3 w-1/2 object-cover shadow-lg shadow-text'
           key={index}
           src={image}
           alt={`Image ${index + 1}`}
           style={{
-            // width: '',
-            // height: '600px',
+
             position: 'absolute',
             transformOrigin: 'center',
             transform: `rotate(${index % 2 === 0 ? '-' : ''}${(index + 1) * 4}deg)`,

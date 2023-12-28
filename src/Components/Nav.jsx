@@ -26,7 +26,7 @@ const Nav = () => {
   return (
     <nav className="h-24 w-5/6 absolute inset-0 sm:w-5/6 mx-auto flex justify-between items-center">
       <div className="w-1/3">
-        <p className="font-custom2 text-xs sm:text-lg ">Kersaoui Moha 👋🏻 </p>
+        <p className="font-custom2 text-xs sm:text-lg hover:font-bold ">Kersaoui Moha 👋🏻 </p>
       </div>
 
       <div className="w-2/3 flex justify-end gap-5 ">
@@ -34,10 +34,7 @@ const Nav = () => {
           <NavLink
             key={link.name}
             to={link.link}
-            className={`text-sm ${show ? 'flex' : 'hidden'}   sm:flex justify-center items-center  bg-text rounded-3xl md:px-6  px-8 py-3 text-background font-custom hover:text-background  hover:bg-text  `}
-
-
-
+            className={({ isActive }) => `${isActive ? "bg-background text-text border-2 border-text  " : ""} text-sm  sm:flex justify-center items-center bg-text  rounded-3xl md:px-6 px-8 py-3 text-background font-custom border-2 hover:text-text hover:bg-background hover:border-2 hover:border-text ${show ? 'flex' : 'hidden'}`}
 
           >
             {link.name}
@@ -64,7 +61,7 @@ const Nav = () => {
               <NavLink
                 key={link.name}
                 to={link.link}
-                className="text-sm sm:text-md text-background bg-text rounded-3xl  px-6 py-2 font-custom mb-4"
+                className="text-sm sm:text-md text-background bg-text rounded-3xl px-6 py-2 font-custom mb-4"
                 onClick={toggleNav}
               >
                 {link.name}
