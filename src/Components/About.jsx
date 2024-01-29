@@ -40,7 +40,7 @@ function About() {
   };
 
   return (
-    <div className="lg:w-4/5 w-full mx-auto flex flex-col-reverse sm:flex-row items-center justify-around  min-h-screen   ">
+    <div className="lg:w-4/5 w-full mx-auto flex flex-col-reverse sm:flex-row items-center justify-around  min-h-screen p-4  ">
       <div className="h-2/5 p-4 mb-16  sm:h-2/3 flex flex-col items-center justify-center sm:items-start sm:justify-center   w-full sm:w-1/2  ">
         <motion.h1
           initial={{ opacity: 0, x: -100 }}
