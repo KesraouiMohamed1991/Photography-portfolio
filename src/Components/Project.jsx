@@ -44,15 +44,21 @@ function Project() {
 
       <motion.div className="w-full min-h-screen   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4 ">
         {images.map((image, index) => (
-          <LazyLoadImage
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
             key={index}
-            height={400}
-            width={300}
-            src={image}
-            alt={`Image ${index + 1}`}
-            effect="blur"
-            className="w-42 h-full object-cover rounded-lg"
-          />
+          >
+            <LazyLoadImage
+              height={400}
+              width={300}
+              src={image}
+              alt={`Image ${index + 1}`}
+              effect="blur"
+              className="w-42 h-full object-cover rounded-lg"
+            />
+          </motion.div>
         ))}
       </motion.div>
     </div>

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import RotatingImages from "./RotatingImages";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function About() {
   const images = [
@@ -37,27 +39,43 @@ function About() {
   return (
     <div className="lg:w-4/5 w-full mx-auto flex flex-col-reverse sm:flex-row items-center justify-around  min-h-screen   ">
       <div className="h-2/5 p-4 mb-16  sm:h-2/3 flex flex-col items-center justify-center sm:items-start sm:justify-center   w-full sm:w-1/2  ">
-        <h1
+        <motion.h1
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
           onMouseEnter={handleMouseEnterH1}
           onMouseLeave={handleMouseLeaveH1}
           className="sm:text-6xl text-3xl sm:mt-24 py-4 font-custom2 text-center sm:text-start"
         >
           Visual Stories, Timeless Images {!isHoveredH1 ? "📷" : "📸"}{" "}
-        </h1>
-        <a
-          className="ml-4 px-7 py-3 sm:mt-16 bg-text text-background rounded-3xl"
-          href="https://wa.me/+33656853329"
-          target="_blank "
-          onMouseEnter={handleMouseEnterBtn}
-          onMouseLeave={handleMouseLeaveBtn}
+        </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
+          className="sm:mt-16"
         >
-          Book a call {!isHoveredBtn ? "😃" : "😉"}
-        </a>
+          <Link
+            className="ml-4 px-7 py-3  bg-text text-background rounded-3xl"
+            to="https://wa.me/+33656853329"
+            target="_blank "
+            onMouseEnter={handleMouseEnterBtn}
+            onMouseLeave={handleMouseLeaveBtn}
+          >
+            Book a call {!isHoveredBtn ? "😃" : "😉"}
+          </Link>
+        </motion.div>
       </div>
 
-      <div className="h-2/5 sm:h-3/5 p-16 mt-32   w-full flex items-center justify-center sm:w-1/2 ">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+        className="h-2/5 sm:h-3/5 p-16 mt-32   w-full flex items-center justify-center sm:w-1/2 "
+      >
         <RotatingImages images={images} />
-      </div>
+      </motion.div>
     </div>
   );
 }
