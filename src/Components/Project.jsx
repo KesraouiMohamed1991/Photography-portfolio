@@ -39,20 +39,20 @@ function Project() {
         Portfolio Showcase
       </h1>
 
-      <div className="w-full min-h-screen  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 flex-wrap">
+      <motion.div className="w-full min-h-screen   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4 ">
         {images.map((image, index) => (
           <motion.img
-            initial={{ y: 100 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
             key={index}
-            transition={{ duration: 300, delay: index * 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 * index }}
             loading="lazy"
-            src={image} // Set the src attribute to the image file path
-            alt={`Image ${index + 1}`} // Provide an alt attribute for accessibility
-            className="w-42 h-full w-full object-cover rounded-lg"
+            src={image}
+            alt={`Image ${index + 1}`}
+            className="w-42 h-full object-cover rounded-lg"
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
