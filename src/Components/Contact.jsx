@@ -4,7 +4,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 function Contact() {
   return (
     <div className="w-4/5 mx-auto flex flex-col sm:flex-row items-center justify-center h-screen">
@@ -39,7 +40,12 @@ function Contact() {
       </div>
 
       <div className="hidden sm:block sm:h-1/2 w-full sm:w-1/3">
-        <img src="../../images/photo00003.webp" alt="" />
+        <LazyLoadImage
+          height={400}
+          width={300}
+          src="../../images/photo00003.webp"
+          alt=""
+        />
       </div>
     </div>
   );

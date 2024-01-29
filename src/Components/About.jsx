@@ -10,6 +10,9 @@ function About() {
     "../../images/photo00005.webp",
     "../../images/photo00006.webp",
     "../../images/photo00007.jpg",
+    "../../images/photo00008.jpg",
+    "../../images/photo00009.jpg",
+    "../../images/photo00010.jpg",
   ];
 
   const [isHoveredH1, setIsHoveredH1] = useState(false);

@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 function Project() {
   const images = [
     "../../images/photo00001.webp",
@@ -41,14 +44,13 @@ function Project() {
 
       <motion.div className="w-full min-h-screen   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4 ">
         {images.map((image, index) => (
-          <motion.img
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
+          <LazyLoadImage
             key={index}
-            transition={{ duration: 0.3, delay: 0.2 * index }}
-            loading="lazy"
+            height={400}
+            width={300}
             src={image}
             alt={`Image ${index + 1}`}
+            effect="blur"
             className="w-42 h-full object-cover rounded-lg"
           />
         ))}
