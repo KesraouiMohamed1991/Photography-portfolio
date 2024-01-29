@@ -41,7 +41,7 @@ const Nav = () => {
                 isActive
                   ? " bg-background text-text border-2 border-text  "
                   : "text-background bg-text"
-              } text-sm  sm:flex justify-center items-center   rounded-3xl md:px-6 px-8 py-3  font-custom border-2   ${
+              } text-sm  sm:flex justify-center items-center   rounded-3xl md:px-6 px-6 py-3  font-custom border-2   ${
                 show ? "flex" : "hidden"
               }`
             }

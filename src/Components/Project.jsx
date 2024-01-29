@@ -37,30 +37,31 @@ function Project() {
     "../../images/photo00031.webp",
   ];
   return (
-    <div className="w-4/5 mx-auto flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-2xl sm:text-4xl w-full px-4 py-16 sm:mt-24 lg:mt-42 font-custom2 text-text text-center">
-        Portfolio Showcase
-      </h1>
+    <div className="w-screen min-h-screen">
+      <div className="w-4/5 mx-auto flex flex-col items-center justify-center min-h-screen p-4">
+        <h1 className="text-2xl sm:text-4xl w-full px-4 py-16 sm:mt-24 lg:mt-42 font-custom2 text-text text-center">
+          Portfolio Showcase
+        </h1>
 
-      <motion.div className="w-full min-h-screen   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4 ">
-        {images.map((image, index) => (
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
-            key={index}
-          >
-            <LazyLoadImage
-              height={400}
-              width={300}
-              src={image}
-              alt={`Image ${index + 1}`}
-              effect="blur"
-              className="w-42 h-full object-cover rounded-lg"
-            />
-          </motion.div>
-        ))}
-      </motion.div>
+        <motion.div className="w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-2 p-4 ">
+          {images.map((image, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              key={index}
+              className=" "
+            >
+              <LazyLoadImage
+                src={image}
+                alt={`Image ${index + 1}`}
+                effect="blur"
+                className="h-[400px] w-[380px] sm:h-[360px] sm:w-[340px] md:h-[320px] md:w-[380px] object-cover rounded"
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 }
