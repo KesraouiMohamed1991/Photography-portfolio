@@ -38,7 +38,7 @@ function Project() {
   ];
   return (
     <div className="w-4/5 mx-auto flex flex-col items-center justify-center min-h-screen p-4">
-      <h1 className="text-3xl w-full px-4 py-16 sm:mt-24 lg:mt-42 font-custom2 text-text text-center">
+      <h1 className="text-2xl sm:text-4xl w-full px-4 py-16 sm:mt-24 lg:mt-42 font-custom2 text-text text-center">
         Portfolio Showcase
       </h1>
 

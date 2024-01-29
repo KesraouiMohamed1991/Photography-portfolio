@@ -5,15 +5,18 @@ import { Link } from "react-router-dom";
 
 function About() {
   const images = [
+    "../../images/photo00006.webp",
+    "../../images/photo00004.webp",
+    "../../images/photo00005.webp",
     "../../images/photo00001.webp",
     "../../images/photo00002.webp",
     "../../images/photo00003.webp",
-    "../../images/photo00004.webp",
-    "../../images/photo00005.webp",
-    "../../images/photo00006.webp",
-    "../../images/photo00007.jpg",
-    "../../images/photo00008.jpg",
-    "../../images/photo00009.jpg",
+    "../../images/photo00029.webp",
+    "../../images/photo00034.webp",
+    "../../images/photo00050.webp",
+    "../../images/photo00060.webp",
+    // "../../images/photo00008.jpg",
+    // "../../images/photo00009.jpg",
     // "../../images/photo00010.jpg",
   ];
 
@@ -45,7 +48,7 @@ function About() {
           transition={{ duration: 0.3, delay: 0.3 }}
           onMouseEnter={handleMouseEnterH1}
           onMouseLeave={handleMouseLeaveH1}
-          className="sm:text-6xl text-3xl sm:mt-24 py-4 font-custom2 text-center sm:text-start"
+          className=" sm:text-3xl mt-16 md:text-4xl lg:text-6xl text-2xl sm:mt-24 py-4 font-custom2 text-center sm:text-start"
         >
           Visual Stories, Timeless Images {!isHoveredH1 ? "📷" : "📸"}{" "}
         </motion.h1>
@@ -54,10 +57,10 @@ function About() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
-          className="sm:mt-16"
+          className="sm:mt-16 my-8 "
         >
           <Link
-            className="ml-4 px-7 py-3  bg-text text-background rounded-3xl"
+            className="ml-4 px-7  py-3  bg-text text-background rounded-3xl"
             to="https://wa.me/+33656853329"
             target="_blank "
             onMouseEnter={handleMouseEnterBtn}
@@ -72,7 +75,7 @@ function About() {
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.3 }}
-        className="h-2/5 sm:h-3/5 p-16 mt-32   w-full flex items-center justify-center sm:w-1/2 "
+        className="h-1/3 sm:h-3/5 p-16 mt-32   w-full flex items-center justify-center sm:w-1/2 "
       >
         <RotatingImages images={images} />
       </motion.div>
