@@ -13,6 +13,8 @@ Welcome to the Photography Portfolio project! This project is a React-based web 
 - **React**: Front-end JavaScript library for building user interfaces.
 - **react-router-dom**: Declarative routing for React applications.
 - **Framer Motion**: Animation library for React projects.
+- **Tailwind CSS**: Utility-first CSS framework for building custom designs quickly.
+
 
 ## Installation
 
