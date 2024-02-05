@@ -5,19 +5,20 @@ import { Link } from "react-router-dom";
 
 function About() {
   const images = [
-    "../../images/photo00006.webp",
-    "../../images/photo00004.webp",
-    "../../images/photo00005.webp",
     "../../images/photo00001.webp",
     "../../images/photo00002.webp",
     "../../images/photo00003.webp",
-    "../../images/photo00029.webp",
-    "../../images/photo00034.webp",
-    "../../images/photo00050.webp",
-    "../../images/photo00060.webp",
-    // "../../images/photo00008.jpg",
-    // "../../images/photo00009.jpg",
-    // "../../images/photo00010.jpg",
+    "../../images/photo00004.webp",
+    "../../images/photo00005.webp",
+    "../../images/photo00006.webp",
+    "../../images/photo00007.webp",
+    "../../images/photo00008.webp",
+    "../../images/photo00009.webp",
+    "../../images/photo00010.webp",
+    "../../images/photo00011.webp",
+    "../../images/photo00012.webp",
+    "../../images/photo00013.webp",
+    "../../images/photo00014.webp",
   ];
 
   const [isHoveredH1, setIsHoveredH1] = useState(false);

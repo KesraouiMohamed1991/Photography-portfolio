@@ -10,31 +10,35 @@ function Project() {
     "../../images/photo00004.webp",
     "../../images/photo00005.webp",
     "../../images/photo00006.webp",
-    "../../images/photo00007.jpg",
-    "../../images/photo00008.jpg",
-    "../../images/photo00009.jpg",
-    "../../images/photo00010.jpg",
-    "../../images/photo00011.jpg",
-    "../../images/photo00012.jpg",
-    "../../images/photo00013.jpg",
-    "../../images/photo00014.jpg",
-    "../../images/photo00015.jpg",
-    "../../images/photo00016.jpg",
-    "../../images/photo00017.jpg",
-    "../../images/photo00018.jpg",
-    "../../images/photo00019.jpg",
-    "../../images/photo00020.jpg",
-    "../../images/photo00021.jpg",
-    "../../images/photo00022.jpg",
-    "../../images/photo00023.jpg",
-    "../../images/photo00024.jpg",
-    "../../images/photo00025.jpg",
-    "../../images/photo00026.jpg",
-    "../../images/photo00027.jpg",
-    "../../images/photo00028.jpg",
+    "../../images/photo00007.webp",
+    "../../images/photo00008.webp",
+    "../../images/photo00009.webp",
+    "../../images/photo00010.webp",
+    "../../images/photo00011.webp",
+    "../../images/photo00012.webp",
+    "../../images/photo00013.webp",
+    "../../images/photo00014.webp",
+    "../../images/photo00015.webp",
+    "../../images/photo00016.webp",
+    "../../images/photo00017.webp",
+    "../../images/photo00018.webp",
+    "../../images/photo00019.webp",
+    "../../images/photo00020.webp",
+    "../../images/photo00021.webp",
+    "../../images/photo00022.webp",
+    "../../images/photo00023.webp",
+    "../../images/photo00024.webp",
+    "../../images/photo00025.webp",
+    "../../images/photo00026.webp",
+    "../../images/photo00027.webp",
+    "../../images/photo00028.webp",
     "../../images/photo00029.webp",
-    "../../images/photo00030.jpg",
+    "../../images/photo00030.webp",
     "../../images/photo00031.webp",
+    "../../images/photo00032.webp",
+    "../../images/photo00033.webp",
+    "../../images/photo00034.webp",
+    "../../images/photo00035.webp",
   ];
   return (
     <div className="w-screen min-h-screen">
@@ -48,7 +52,7 @@ function Project() {
             <motion.div
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.003 * index }}
               key={index}
               className=" "
             >
