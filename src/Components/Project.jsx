@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Project() {
   const images = [
@@ -39,6 +37,11 @@ function Project() {
     "../../images/photo00033.webp",
     "../../images/photo00034.webp",
     "../../images/photo00035.webp",
+    "../../images/photo00042.webp",
+    "../../images/photo00044.webp",
+    "../../images/photo00046.webp",
+    "../../images/photo00052.webp",
+    "../../images/photo00054.webp",
   ];
   return (
     <div className="w-screen min-h-screen">
@@ -54,13 +57,11 @@ function Project() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.001 * index }}
               key={index}
-              className=" "
             >
-              <LazyLoadImage
+              <img
+                className="h-[400px] w-[380px] sm:h-[360px] sm:w-[340px] md:h-[320px] md:w-[380px] object-cover rounded"
                 src={image}
                 alt={`Image ${index + 1}`}
-                effect="blur"
-                className="h-[400px] w-[380px] sm:h-[360px] sm:w-[340px] md:h-[320px] md:w-[380px] object-cover rounded"
               />
             </motion.div>
           ))}

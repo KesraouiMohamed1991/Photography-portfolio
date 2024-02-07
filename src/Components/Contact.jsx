@@ -3,8 +3,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+
 import { motion } from "framer-motion";
 
 const socialMediaLinks = [
@@ -70,10 +69,10 @@ function Contact() {
         transition={{ duration: 0.3 }}
         className="hidden sm:block sm:h-1/2 w-full sm:w-1/3"
       >
-        <LazyLoadImage
+        <img
           height={400}
           width={300}
-          src="../../images/photo00003.webp"
+          src="../../images/photo00004.webp"
           alt=""
         />
       </motion.div>
