@@ -73,7 +73,8 @@ function Contact() {
           height={400}
           width={300}
           src="../../images/photo00004.webp"
-          alt=""
+          alt="image david parado"
+          loading="lazy"
         />
       </motion.div>
     </div>

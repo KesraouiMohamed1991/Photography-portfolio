@@ -56,12 +56,14 @@ function Project() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.001 * index }}
+              viewport={{ once: true }}
               key={index}
             >
               <img
                 className="h-[400px] w-[380px] sm:h-[360px] sm:w-[340px] md:h-[320px] md:w-[380px] object-cover rounded"
                 src={image}
                 alt={`Image ${index + 1}`}
+                loading="lazy"
               />
             </motion.div>
           ))}
