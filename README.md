@@ -15,7 +15,6 @@ Welcome to the Photography Portfolio project! This project is a React-based web 
 - **Framer Motion**: Animation library for React projects.
 - **Tailwind CSS**: Utility-first CSS framework for building custom designs quickly.
 
-
 ## Installation
 
 1. Clone the repository:
