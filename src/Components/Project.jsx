@@ -52,7 +52,7 @@ function Project() {
             <motion.div
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.003 * index }}
+              transition={{ duration: 0.3, delay: 0.001 * index }}
               key={index}
               className=" "
             >
