@@ -175,9 +175,9 @@ function Project() {
         <div className="w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-2 p-4 ">
           {images.map((image, index) => (
             <motion.div
-              initial={{ opacity: 0, y: 60 }}
+              initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.001 * index }}
+              transition={{ duration: 0.4, delay: 0.03 * index }}
               viewport={{ once: true }}
               key={index}
             >
